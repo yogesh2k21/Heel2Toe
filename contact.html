@@ -6,9 +6,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@600&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.17/tailwind.min.css">
   <!-- Style -->
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/contact.css">
+  <!-- <link rel="stylesheet" href="css/contact.css"> -->
   <link rel="stylesheet" href="css/allbtns.css">
   <title>Contact</title>
 </head>
@@ -35,55 +36,46 @@
     </div>
   </nav>
 
-  <div class="new">
-    <div class="container">
-
-      <h1 class="contactform">CONTACT</h1>
-      <form action="" method="get">
-
-        <label for="fname">Name</label>
-        <input type="text" id="name" name="name" placeholder="Elon Musk">
-
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="elonmusk.mars@tesla.com">
-
-        <label for="email">Delivery</label>
-        <input type="text" id="email" name="email" placeholder="Delivery Address">
-
-        <label for="Mobile">Mobile</label>
-        <input type="text" id="email" name="email" placeholder="Phone Number">
-
-        <label for="category">Category</label>
-        <select id="category" name="category">
-          <option value="delivery">Delivery</option>
-          <option value="sales">Sales</option>
-          <option value="finance">Finance</option>
-          <option value="misc">Misc</option>
-        </select>
-
-
-        <label for="content">Any Message For Us</label>
-        <textarea id="content" name="content" placeholder="When will my Tesla Roadster get delivered."
-          style="height:200px"></textarea>
-
-        <input id="submit" type="submit" value="Submit">
-
-      </form>
-
+  <section class="text-gray-600 body-font elative">
+    <div class="absolute inset-0 bg-gray-300">
+      <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0india+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
     </div>
-  </div>
+    <div style="padding-top: 7rem;" class="px-16">
+      <div style="width: 25rem;" class="lg:w-1/2 bg-white rounded-lg p-6 flex flex-col md:ml-auto w-full md:mt-0 relative z-100 shadow-md">
+        <h2 class="text-gray-900 text-center text-lg mb-2 font-medium title-font">CONTACT</h2>
+        <form action="" method="get">
+          <div class="relative">
+            <input type="text" class="" id="name" name="name" placeholder="Elon Musk">
+          </div>
+          <div style="margin-top: -12px;" class="relative">
+            <input type="text" id="email" name="email" placeholder="elonmusk.mars@tesla.com">
+          </div>
+          <div style="margin-top: -12px;" class="relative">
+            <input type="text" id="email" name="email" placeholder="Delivery Address">
+          </div>
+          <div style="margin-top: -12px;" class="relative">
+            <input type="text" id="email" name="email" placeholder="Phone Number">
+          </div>
+          <div style="margin-top: -12px;" class="relative">
+            <select id="category" name="category">
+              <option selected disabled>Category</option>
+              <option value="delivery">Delivery</option>
+              <option value="sales">Sales</option>
+              <option value="finance">Finance</option>
+              <option value="misc">Misc</option>
+            </select>
+          </div>
+          <div style="margin-top: -12px;" class="relative">
+            <textarea id="content" name="content" placeholder="When will my Tesla Roadster get delivered."
+          style="height:80px"></textarea>
+          </div>
+          <input id="submit" type="submit" class="text-white bg-yellow-700 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-500 rounded text-lg" value="Submit">
+        </form>
+      </div>
+    </div>
+  </section>
+
   <script src="script.js"></script>
-
-   <!-- script for mobile nav links -->
-   <script>
-    const icon = document.querySelector(".menu-icon");
-    const navList = document.querySelector("nav ul")
-
-    icon.addEventListener("click", function(){
-        navList.classList.toggle("showing")
-    })
-</script>
-
 </body>
 
 </html>
